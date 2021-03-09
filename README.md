@@ -1,39 +1,31 @@
-# bbb-puppeteer
+# bbb-bomber
 
-Puppeteer scripts to test the BigBlueButton client.
+## About
 
-The goal is to easily test the functionalities of a BigBlueButton server under various circumstances, and based on the [Systematic BigBlueButton 2.2 Test Plan](https://docs.google.com/spreadsheets/d/1RUUKC30n5uMdnBeLgwkN4qvxWAJsKT6UWXMoGJOhleE).
-
-These autotests are described step by step in this [SpreadSheet](https://docs.google.com/spreadsheets/d/1dXeYkATC-6_83gy4XXhdHNZnEtPuNOn07U6w9mYBYrc/edit?usp=sharing) 
-
-# Setup
+This script is just a messages bomber for BBB.
 
 ## Requirements
 
-  Node.js: ```curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -```
+This script requires bbb-demo to be installed.
 
-## Installation
+## How to install this ?
 
-`git clone git@github.com:daminebenz/bbb-puppeteer.git;`
-`cd bbb-puppeteer;`
-`npm install;`
+Simply do the following:
+```
+npm install;
+```
 
+Running the above command will get you everything ready to run the script.
 
-The basic operation is to run `test-XX.sh`, a BASH script that in turn runs a number of `node **.test.js *URL*` commands.  Each `test-XX.sh` uses the BigBlueButton server URL provided.
+## How to run this ?
 
-`test-XX.sh` uses an environment variable `URL` to connect to the BigBlueButton server.
+To run this script:
+```
+npm start;
+```
 
-~~~
+It will ask you to enter the following: 
+1. URL (your running bbb server).
+2. MESSAGES_AMOUNT (amount of messages to send to a specific bbb meeting).
+3. MEETING_NAME (a specification name for a bbb meeting to create and in which test will run).
 
-## Running
-
-To run, execute `./test-XX.sh *URL*`
-
-~~~bash
-./test-01.sh https://8d1ab45384a1.bbbvm.imdt.com.br
-~~~
-
-The default script will launch the clients it needs on the server you describe in the URL.
-
-## That's all
-## Happy testing
