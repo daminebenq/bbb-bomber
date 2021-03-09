@@ -25,7 +25,7 @@ npm start;
 ```
 
 It will ask you to enter the following: 
-1. URL (your running bbb server).
-2. MESSAGES_AMOUNT (amount of messages to send to a specific bbb meeting).
-3. MEETING_NAME (a specification name for a bbb meeting to create and in which test will run).
+1. **URL** (your running bbb server).
+2. **MESSAGES_AMOUNT** (amount of messages to send to a specific bbb meeting).
+3. **MEETING_NAME** (a specification name for a bbb meeting to create and in which test will run).
 
